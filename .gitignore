@@ -2,3 +2,5 @@ database/.env
 data/
 .venv/
 reports/
+.qodo/
+.vscode/
