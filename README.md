@@ -66,18 +66,23 @@ Duplicatas encontradas: 0
 
 ## Como Executar
 
-1.  **Abrir ambiente virtual com dependências já instaladas:**
+1.  **Criar e ativar o ambiente virtual:**
+    Certifique-se de ter o Python 3.11.8 instalado e acessível. No Windows, você pode usar o `py launcher` se configurado, ou o caminho completo para o executável do Python.
     ```bash
-    .\ambiente_virtual\Scripts\Activate
+    py -3.11.8 -m venv .venv
+    .\.venv\Scripts\Activate
     ```
-2.  **Execução dos Notebooks:**
-    ORDEM:
- • 1°    - `#bronze_layer.ipynb`
- • 2°    - `#silver_layer.ipynb`
- • 3°    - `#gold_layer.ipynb`
- • 4°    - `load_to_database.ipynb`
- • 5°    - `SQL_queries.ipynb`
- • 6°    - `data_quality_report.ipynb`    
+2.  **Instalar as dependências:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Executar os notebooks Jupyter na seguinte ordem:**
+    1. `notebooks/01_bronze_layer.ipynb`
+    2. `notebooks/02_silver_layer.ipynb`
+    3. `notebooks/03_gold_layer.ipynb`
+    4. `notebooks/04_load_to_sqlite.ipynb`
+    5. `notebooks/analysis/SQL_queries.ipynb`
+    6. `notebooks/analysis/data_quality_report.ipynb`    
 
 Consulte o banco de dados:
 ```python

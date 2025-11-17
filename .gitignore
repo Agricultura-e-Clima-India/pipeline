@@ -1,0 +1,4 @@
+database/.env
+data/
+.venv/
+reports/
